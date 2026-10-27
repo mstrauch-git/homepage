@@ -1,4 +1,4 @@
-# Academic homepage with ORCID Works importer
+# Homepage with ORCID Works importer
 
 Files:
 - `index.html`: original design and navigation, with a publications display.
