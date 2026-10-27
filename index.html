@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Matthias Strauch — Department of Mathematics, Indiana University">
+  <title>Matthias Strauch | Indiana University Mathematics</title>
+  <style>
+    :root { --cream:#fff9df; --crimson:#990000; --ink:#302d29; --muted:#625d52; --line:#ded4b8; --selection:#efe4c1; }
+    *{box-sizing:border-box} html{background:var(--cream)}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.65;font-size:17px}
+    .top-gap{height:23px}
+    .band{background:var(--crimson);color:#fff;min-height:85px;display:flex;align-items:center;justify-content:flex-end;padding:18px max(5%,calc((100vw - 1160px)/2));}
+    .band-text{text-align:right;line-height:1.25;font-family:Georgia,'Times New Roman',serif;letter-spacing:.01em}
+    .band-text strong{display:block;font-size:24px;font-weight:normal}.band-text span{display:block;font-size:17px}
+    .container{max-width:1160px;margin:0 auto;padding:42px 42px 70px}
+    header{margin-bottom:36px} h1{font-size:35px;font-weight:normal;line-height:1.2;margin:0 0 12px}
+    .contact{font-size:15px;line-height:1.6;font-style:normal;color:var(--muted)}
+    a{color:#8c1515;text-underline-offset:3px}a:hover{color:#590000}
+    .content-grid{border-top:1px solid var(--line);padding-top:33px;display:grid;grid-template-columns:190px minmax(0,1fr);gap:55px}
+    nav{display:flex;flex-direction:column;gap:5px;align-self:start}
+    nav button{border:0;border-radius:3px;display:block;width:100%;padding:10px 13px;background:transparent;font-family:Georgia,'Times New Roman',serif;text-align:left;color:#494337;font-size:17px;cursor:pointer}
+    nav button:hover,nav button:focus-visible{background:#f3eacb;outline-offset:2px}
+    nav button[aria-selected="true"]{background:var(--selection);color:var(--crimson);font-weight:bold}
+    main{min-height:370px} .panel[hidden]{display:none} h2{font-size:28px;line-height:1.3;font-weight:normal;margin:0 0 15px}
+    .note{font-size:15px;color:var(--muted);margin:0 0 18px}.entry{border-top:1px solid var(--line);padding:15px 0}.entry p{margin:0 0 5px}
+    .entry .year{font-size:15px;color:var(--muted)}
+    footer{margin-top:65px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+    @media(max-width:700px){.band{padding:16px 23px;min-height:75px}.band-text strong{font-size:20px}.band-text span{font-size:15px}.container{padding:27px 22px 45px}h1{font-size:30px}.content-grid{display:block;padding-top:17px}nav{flex-direction:row;flex-wrap:wrap;gap:4px;margin-bottom:29px}nav button{width:auto;padding:8px 10px;font-size:15px}h2{font-size:25px}}
+    @media(prefers-reduced-motion:no-preference){a,nav button{transition:background-color .12s,color .12s}}
+  </style>
+</head>
+<body>
+  <div class="top-gap" aria-hidden="true"></div>
+  <div class="band"><div class="band-text"><strong>Indiana University</strong><span>Department of Mathematics</span></div></div>
+  <div class="container">
+    <header>
+      <h1>Matthias Strauch</h1>
+      <address class="contact">
+        Department of Mathematics<br>
+        Indiana University Bloomington<br>
+        Rawles Hall 336, 831 East Third Street<br>
+        Bloomington, IN 47405<br>
+        <a href="mailto:mstrauch@indiana.edu">mstrauch@indiana.edu</a>
+      </address>
+    </header>
+    <div class="content-grid">
+      <nav aria-label="Website sections" role="tablist">
+        <button id="tab-publications" role="tab" aria-controls="panel-publications" aria-selected="true" tabindex="0" data-panel="publications">Publications</button>
+        <button id="tab-teaching" role="tab" aria-controls="panel-teaching" aria-selected="false" tabindex="-1" data-panel="teaching">Teaching</button>
+        <button id="tab-service" role="tab" aria-controls="panel-service" aria-selected="false" tabindex="-1" data-panel="service">Service</button>
+        <button id="tab-students" role="tab" aria-controls="panel-students" aria-selected="false" tabindex="-1" data-panel="students">Former students</button>
+      </nav>
+      <main>
+        <section class="panel" id="panel-publications" role="tabpanel" aria-labelledby="tab-publications">
+          <h2>Publications</h2>
+          <p class="note">The publication list will be imported from <a href="https://orcid.org/0000-0002-5291-5531" target="_blank" rel="noopener noreferrer">my ORCID record</a> and refreshed on the first day of each month.</p>
+          <div class="entry"><p>This is a preliminary version of the website. The automatic ORCID import will be added next; no publications are being represented as imported yet.</p></div>
+        </section>
+        <section class="panel" id="panel-teaching" role="tabpanel" aria-labelledby="tab-teaching" hidden>
+          <h2>Teaching</h2><p>Courses and teaching information will appear here.</p>
+        </section>
+        <section class="panel" id="panel-service" role="tabpanel" aria-labelledby="tab-service" hidden>
+          <h2>Service</h2><p>Departmental, university, and professional service will appear here.</p>
+        </section>
+        <section class="panel" id="panel-students" role="tabpanel" aria-labelledby="tab-students" hidden>
+          <h2>Former students</h2><p>Former students and dissertation information will appear here.</p>
+        </section>
+      </main>
+    </div>
+    <footer>Preliminary private preview — not yet published on GitHub Pages.</footer>
+  </div>
+  <script>
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    function selectTab(id, updateHash = true) {
+      const chosen = tabs.find(tab => tab.dataset.panel === id) || tabs[0];
+      tabs.forEach(tab => {
+        const active = tab === chosen;
+        tab.setAttribute('aria-selected', String(active));
+        tab.tabIndex = active ? 0 : -1;
+        document.getElementById('panel-' + tab.dataset.panel).hidden = !active;
+      });
+      if (updateHash) history.replaceState(null, '', '#' + chosen.dataset.panel);
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectTab(tab.dataset.panel));
+      tab.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowDown' || event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault(); tabs[next].focus(); selectTab(tabs[next].dataset.panel);
+      });
+    });
+    selectTab(location.hash.slice(1), false);
+    window.addEventListener('hashchange', () => selectTab(location.hash.slice(1), false));
+  </script>
+</body>
+</html>
