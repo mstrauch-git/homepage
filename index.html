@@ -56,7 +56,8 @@
         <section class="panel" id="panel-publications" role="tabpanel" aria-labelledby="tab-publications">
           <h2>Publications</h2>
           <p class="note">Publications are imported from <a href="https://orcid.org/0000-0002-5291-5531" target="_blank" rel="noopener noreferrer">my ORCID record</a> and refreshed on the first day of each month.</p>
-          <div class="entry"><p>This is a preliminary version of the website. The automatic ORCID import will be added next; no publications are being represented as imported yet.</p></div>
+          <p id="publication-status" class="note" aria-live="polite">Loading publications from ORCID…</p>
+          <div id="publication-list" aria-live="polite"></div>         
         </section>
         <section class="panel" id="panel-teaching" role="tabpanel" aria-labelledby="tab-teaching" hidden>
           <h2>Teaching</h2><p>Courses and teaching information will appear here.</p>
