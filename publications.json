@@ -1,0 +1,371 @@
+{
+  "orcid": "0000-0002-5291-5531",
+  "updated": "2026-10-27",
+  "works": [
+    {
+      "title": "Trianguline representations and locally analytic principal series of ${\\rm GL}_2({\\mathbb Q}_p)$",
+      "year": "2026",
+      "journal": null,
+      "authors": [
+        "Matthias Strauch",
+        "Zichuan Wang"
+      ],
+      "type": "preprint",
+      "doi": "10.48550/ARXIV.2608.05396",
+      "url": "https://doi.org/10.48550/ARXIV.2608.05396"
+    },
+    {
+      "title": "Dagger groups and p-adic distribution algebras",
+      "year": "2026",
+      "journal": "Journal of Pure and Applied Algebra",
+      "authors": [
+        "Aranya Lahiri",
+        "Claus Sorensen",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1016/j.jpaa.2025.108147",
+      "url": "https://doi.org/10.1016/j.jpaa.2025.108147"
+    },
+    {
+      "title": "Block decompositions in the p-adic Langlands correspondence",
+      "year": "2026",
+      "journal": null,
+      "authors": [
+        "Daniel Le",
+        "Matthias Strauch",
+        "Zichuan Wang"
+      ],
+      "type": "preprint",
+      "doi": "10.48550/ARXIV.2610.07648",
+      "url": "https://doi.org/10.48550/ARXIV.2610.07648"
+    },
+    {
+      "title": "p-adic Banach space representations of SL2(ℚp)",
+      "year": "2025",
+      "journal": "Israel Journal of Mathematics",
+      "authors": [
+        "Dubravka Ban",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1007/s11856-025-2731-4",
+      "url": "https://doi.org/10.1007/s11856-025-2731-4"
+    },
+    {
+      "title": "Bernstein-Zelevinsky duality for locally analytic principal series representations",
+      "year": "2025",
+      "journal": null,
+      "authors": [
+        "Matthias Strauch",
+        "Zhixiang Wu"
+      ],
+      "type": "preprint",
+      "doi": "10.48550/ARXIV.2501.04850",
+      "url": "https://doi.org/10.48550/ARXIV.2501.04850"
+    },
+    {
+      "title": "Translation functors for locally analytic representations",
+      "year": "2024",
+      "journal": "International Journal of Number Theory",
+      "authors": [
+        "Akash Jena",
+        "Aranya Lahiri",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1142/S1793042124501252",
+      "url": "https://doi.org/10.1142/S1793042124501252"
+    },
+    {
+      "title": "Resolutions for Locally Analytic Representations",
+      "year": "2024",
+      "journal": null,
+      "authors": [
+        "Shishir Agrawal",
+        "Matthias Strauch"
+      ],
+      "type": "preprint",
+      "doi": "10.48550/ARXIV.2409.05079",
+      "url": "https://doi.org/10.48550/ARXIV.2409.05079"
+    },
+    {
+      "title": "Ext duality in derived catgeory ${\\mathcal O}^\\infty$ and locally analytic representations",
+      "year": "2024",
+      "journal": null,
+      "authors": [
+        "Cemile Kurkoglu",
+        "Tobias Schmidt",
+        "Matthias Strauch"
+      ],
+      "type": "working-paper",
+      "doi": null,
+      "url": null
+    },
+    {
+      "title": "From category O∞ to locally analytic representations",
+      "year": "2022",
+      "journal": "Journal of Algebra",
+      "authors": [
+        "Shishir Agrawal",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1016/j.jalgebra.2021.09.032",
+      "url": "https://doi.org/10.1016/j.jalgebra.2021.09.032"
+    },
+    {
+      "title": "Arithmetic differential operators with congruence level structures: First results and examples",
+      "year": "2022",
+      "journal": "Journal of Number Theory",
+      "authors": [
+        "Christine Huyghe",
+        "Tobias Schmidt",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1016/j.jnt.2019.08.004",
+      "url": "https://doi.org/10.1016/j.jnt.2019.08.004"
+    },
+    {
+      "title": "Lubin-Tate deformation spaces and fields of norms",
+      "year": "2021",
+      "journal": "J. Théor. Nombres Bordeaux",
+      "authors": [
+        "Carter, Annie",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.5802/jtnb.1166",
+      "url": "https://doi.org/10.5802/jtnb.1166"
+    },
+    {
+      "title": "Arithmetic structures for differential operators on formal\r\n              schemes",
+      "year": "2021",
+      "journal": "Nagoya Math. J.",
+      "authors": [
+        "Huyghe, Christine",
+        "Schmidt, Tobias",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1017/nmj.2019.37",
+      "url": "https://doi.org/10.1017/nmj.2019.37"
+    },
+    {
+      "title": "Locally analytic representations of $̊m GL(2,L)$ via\r\n              semistable models of $\\BbbP^1$",
+      "year": "2019",
+      "journal": "J. Inst. Math. Jussieu",
+      "authors": [
+        "Patel, Deepam",
+        "Schmidt, Tobias",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1017/S1474748016000396",
+      "url": "https://doi.org/10.1017/S1474748016000396"
+    },
+    {
+      "title": "Arithmetic differential operators on a semistable model of\r\n              $\\Bbb P^1$",
+      "year": "2019",
+      "journal": "Math. Z.",
+      "authors": [
+        "Patel, Deepam",
+        "Schmidt, Tobias",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1007/s00209-018-2171-5",
+      "url": "https://doi.org/10.1007/s00209-018-2171-5"
+    },
+    {
+      "title": "${\\mathscr D}^\\dagger$-affinity of formal models of flag varieties",
+      "year": "2019",
+      "journal": "Mathematical Research Letters",
+      "authors": [
+        "Christine Huyghe",
+        "Deepam Patel",
+        "Tobias Schmidt",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.4310/mrl.2019.v26.n6.a5",
+      "url": "https://doi.org/10.4310/mrl.2019.v26.n6.a5"
+    },
+    {
+      "title": "Dimensions of some locally analytic representations",
+      "year": "2016",
+      "journal": "Represent. Theory",
+      "authors": [
+        "Schmidt, Tobias",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1090/ert/475",
+      "url": "https://doi.org/10.1090/ert/475"
+    },
+    {
+      "title": "On Jordan-Hölder series of some locally analytic representations",
+      "year": "2014",
+      "journal": "Journal of the American Mathematical Society",
+      "authors": [
+        "Sascha Orlik",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1090/s0894-0347-2014-00803-1",
+      "url": "https://doi.org/10.1090/s0894-0347-2014-00803-1"
+    },
+    {
+      "title": "Locally analytic representations and sheaves on the Bruhat–Tits building",
+      "year": "2014",
+      "journal": "Algebra &amp; Number Theory",
+      "authors": [
+        "Deepam Patel",
+        "Tobias Schmidt",
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.2140/ant.2014.8.1365",
+      "url": "https://doi.org/10.2140/ant.2014.8.1365"
+    },
+    {
+      "title": "Integral models of $\\Bbb P^1$ and analytic distribution\r\n              algebras for $̊m GL(2)$",
+      "year": "2014",
+      "journal": "Münster J. Math.",
+      "authors": [
+        "Patel, Deepam",
+        "Schmidt, Tobias",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": null,
+      "url": null
+    },
+    {
+      "title": "On the irreducibility of locally analytic principal series\r\n              representations",
+      "year": "2010",
+      "journal": "Represent. Theory",
+      "authors": [
+        "Orlik, Sascha",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1090/S1088-4165-2010-00387-8",
+      "url": "https://doi.org/10.1090/S1088-4165-2010-00387-8"
+    },
+    {
+      "title": "Galois actions on torsion points of one-dimensional formal\r\n              modules",
+      "year": "2010",
+      "journal": "J. Number Theory",
+      "authors": [
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1016/j.jnt.2009.10.004",
+      "url": "https://doi.org/10.1016/j.jnt.2009.10.004"
+    },
+    {
+      "title": "Geometrically Connected Components of Lubin-Tate Deformation Spaces with Level Structures",
+      "year": "2008",
+      "journal": "Pure and Applied Mathematics Quarterly",
+      "authors": [
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.4310/pamq.2008.v4.n4.a10",
+      "url": "https://doi.org/10.4310/pamq.2008.v4.n4.a10"
+    },
+    {
+      "title": "Deformation spaces of one-dimensional formal modules and their cohomology",
+      "year": "2008",
+      "journal": "Advances in Mathematics",
+      "authors": [
+        "Matthias Strauch"
+      ],
+      "type": "journal-article",
+      "doi": "10.1016/j.aim.2007.07.005",
+      "url": "https://doi.org/10.1016/j.aim.2007.07.005"
+    },
+    {
+      "title": "Locally analytic cuspidal representations for $̊m GL_2$\r\n              and related groups",
+      "year": "2006",
+      "journal": "J. Inst. Math. Jussieu",
+      "authors": [
+        "Kisin, Mark",
+        "Strauch, Matthias"
+      ],
+      "type": "journal-article",
+      "doi": "10.1017/S1474748005000228",
+      "url": "https://doi.org/10.1017/S1474748005000228"
+    },
+    {
+      "title": "On the Jacquet-Langlands correspondence in the cohomology\r\n              of the Lubin-Tate deformation tower",
+      "year": "2005",
+      "journal": "Astérisque",
+      "authors": [
+        "Strauch, Matthias"
+      ],
+      "type": "book-chapter",
+      "doi": null,
+      "url": null
+    },
+    {
+      "title": "Boundaries of Lubin-Tate deformation spaces",
+      "year": "2004",
+      "journal": "Mathematisches Institut, Georg-August-Universität\r\n              Göttingen: Seminars 2003/2004",
+      "authors": [
+        "Strauch, M."
+      ],
+      "type": "book-chapter",
+      "doi": null,
+      "url": null
+    },
+    {
+      "title": "Arithmetic stratifications and partial Eisenstein series",
+      "year": "2001",
+      "journal": "Rational points on algebraic varieties",
+      "authors": [
+        "Strauch, Matthias"
+      ],
+      "type": "book-chapter",
+      "doi": null,
+      "url": null
+    },
+    {
+      "title": "Height zeta functions of toric bundles over flag varieties",
+      "year": "1999",
+      "journal": "Selecta Math. (N.S.)",
+      "authors": [
+        "Strauch, Matthias",
+        "Tschinkel, Yuri"
+      ],
+      "type": "journal-article",
+      "doi": "10.1007/s000290050051",
+      "url": "https://doi.org/10.1007/s000290050051"
+    },
+    {
+      "title": "Höhentheoretische Zetafunktionen von Faserbündeln\r\n              über verallgemeinerten Fahnenvarietäten",
+      "year": "1998",
+      "journal": null,
+      "authors": [
+        "Strauch, Matthias"
+      ],
+      "type": "book",
+      "doi": null,
+      "url": null
+    },
+    {
+      "title": "Height zeta functions of twisted products",
+      "year": "1997",
+      "journal": "Math. Res. Lett.",
+      "authors": [
+        "Strauch, Matthias",
+        "Tschinkel, Yuri"
+      ],
+      "type": "journal-article",
+      "doi": "10.4310/MRL.1997.v4.n2.a8",
+      "url": "https://doi.org/10.4310/MRL.1997.v4.n2.a8"
+    }
+  ]
+}
