@@ -63,6 +63,9 @@ def main():
         identifiers = (source.get('external-ids') or summary.get('external-ids') or {}).get('external-id') or []
         doi = next((item.get('external-id-value') for item in identifiers if (item.get('external-id-type') or '').lower() == 'doi' and item.get('external-id-value')), None)
         doi = re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi, flags=re.I).strip() if doi else None
+                # Correct mathematical notation in the Crossref title.
+        if doi and doi.lower() == '10.1016/j.jalgebra.2021.09.032':
+            title = r'From category ${\mathcal O}^{\infty}$ to locally analytic representations'
         url = value(source.get('url')) or value(summary.get('url'))
         if doi:
             url = 'https://doi.org/' + urllib.parse.quote(doi, safe='/()-.;:')
