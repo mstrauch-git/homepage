@@ -64,7 +64,7 @@
         <address class="contact">
           Rawles Hall 336, 831 East Third Street<br>
           Bloomington, IN 47405<br>
-          <a href="mailto:mstrauch@indiana.edu">mstrauch@indiana.edu</a>
+          mstrauch at iu dot edu
         </address>
       </div>
 
@@ -79,29 +79,39 @@
       <nav aria-label="Website sections" role="tablist">
         <button id="tab-publications" role="tab" aria-controls="panel-publications" aria-selected="true" tabindex="0" data-panel="publications">Publications</button>
         <button id="tab-teaching" role="tab" aria-controls="panel-teaching" aria-selected="false" tabindex="-1" data-panel="teaching">Teaching</button>
-        <button id="tab-organizing" role="tab" aria-controls="panel-service" aria-selected="false" tabindex="-1" data-panel="service">Organizing</button>
+        <button id="tab-organizing" role="tab" aria-controls="panel-organizing" aria-selected="false" tabindex="-1" data-panel="organizing">Organizing</button>
         <button id="tab-service" role="tab" aria-controls="panel-service" aria-selected="false" tabindex="-1" data-panel="service">Service</button>
-        <button id="tab-students" role="tab" aria-controls="panel-students" aria-selected="false" tabindex="-1" data-panel="students">Former students</button>
+        <button id="tab-students" role="tab" aria-controls="panel-students" aria-selected="false" tabindex="-1" data-panel="students">Students</button>
       </nav>
       <main>
         <section class="panel" id="panel-publications" role="tabpanel" aria-labelledby="tab-publications">
-          <h2>Publications</h2>
+          <h2>Publications and preprints</h2>
           <p class="note">Publications are imported from my <a href="https://orcid.org/0000-0002-5291-5531" target="_blank" rel="noopener noreferrer">ORCID</a> record and refreshed on the first day of each month.</p>
           <p id="publication-status" class="note" aria-live="polite">Loading publications from ORCID…</p>
           <div id="publication-list" aria-live="polite"></div>         
         </section>
-        <section class="panel" id="panel-teaching" role="tabpanel" aria-labelledby="tab-teaching" hidden>
-          <h2>Teaching</h2><p>Courses and teaching information will appear here.</p>
-        </section>
-        <section class="panel" id="panel-service" role="tabpanel" aria-labelledby="tab-service" hidden>
-          <h2>Service</h2><p>Departmental, university, and professional service will appear here.</p>
-        </section>
-        <section class="panel" id="panel-students" role="tabpanel" aria-labelledby="tab-students" hidden>
-          <h2>Former students</h2><p>Former students and dissertation information will appear here.</p>
-        </section>
+<section class="panel" id="panel-teaching"
+         role="tabpanel" aria-labelledby="tab-teaching" hidden>
+  <p>Loading Teaching...</p>
+</section>
+
+<section class="panel" id="panel-organizing"
+         role="tabpanel" aria-labelledby="tab-organizing" hidden>
+  <p>Loading Organizing...</p>
+</section>
+
+<section class="panel" id="panel-service"
+         role="tabpanel" aria-labelledby="tab-service" hidden>
+  <p>Loading Service...</p>
+</section>
+
+<section class="panel" id="panel-students"
+         role="tabpanel" aria-labelledby="tab-students" hidden>
+  <p>Loading Students...</p>
+</section>
+
       </main>
     </div>
-    <footer>Preliminary private preview — not yet published on GitHub Pages.</footer>
   </div>
 
 <script>
@@ -135,21 +145,73 @@ async function loadPublications() {
             link.textContent = work.title; title.append(link);
           } else title.textContent = work.title;
           entry.append(title);
-          const details = [work.authors?.join(', '), work.journal, work.year].filter(Boolean);
-          if (details.length) {
-            const meta = document.createElement('p'); meta.className = 'publication-meta';
-            meta.textContent = details.join(' · '); entry.append(meta);
+          const publicationType =
+            work.type === 'preprint' ? 'Preprint' :
+            work.type === 'working-paper' ? 'In preparation' :
+            null;
+
+          const details = [
+            work.authors?.join(', '),
+            work.journal,
+            work.year
+          ].filter(Boolean);
+
+          if (details.length || publicationType) {
+            const meta = document.createElement('p');
+            meta.className = 'publication-meta';
+            meta.textContent = details.join(' · ');
+
+            if (publicationType) {
+              if (details.length) {
+                meta.append(document.createTextNode(' · '));
+              }
+              const label = document.createElement('em');
+              label.textContent = publicationType;
+              meta.append(label);
+            }
+
+            entry.append(meta);
           }
           list.append(entry);
         }
-      if (window.MathJax && window.MathJax.typesetPromise) {
-         await window.MathJax.typesetPromise([list]);
-       }     } catch (error) {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+          await window.MathJax.typesetPromise([list]);
+        }
+      } catch (error) {  
         status.textContent = 'Publications have not been imported yet. Please run the ORCID update workflow.';
         console.warn('Could not load publications:', error);
       }
     }
     loadPublications();
+    const sectionFiles = {
+  teaching: 'sections/teaching.html',
+  organizing: 'sections/organizing.html',
+  service: 'sections/service.html',
+  students: 'sections/students.html'
+};
+
+const loadedSections = new Set();
+
+async function loadSection(id) {
+  const file = sectionFiles[id];
+  if (!file || loadedSections.has(id)) return;
+
+  const panel = document.getElementById('panel-' + id);
+  if (!panel) return;
+
+  try {
+    const response = await fetch(file);
+    if (!response.ok) {
+      throw new Error('Could not load ' + file);
+    }
+
+    panel.innerHTML = await response.text();
+    loadedSections.add(id);
+  } catch (error) {
+    panel.textContent = 'This section could not be loaded. Please try again.';
+    console.error(error);
+  }
+}
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
     function selectTab(id, updateHash = true) {
       const chosen = tabs.find(tab => tab.dataset.panel === id) || tabs[0];
@@ -160,6 +222,7 @@ async function loadPublications() {
         document.getElementById('panel-' + tab.dataset.panel).hidden = !active;
       });
       if (updateHash) history.replaceState(null, '', '#' + chosen.dataset.panel);
+      loadSection(chosen.dataset.panel);
     }
     tabs.forEach((tab, index) => {
       tab.addEventListener('click', () => selectTab(tab.dataset.panel));
