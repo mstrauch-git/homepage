@@ -25,37 +25,68 @@
     main{min-height:370px} .panel[hidden]{display:none} h2{font-size:28px;line-height:1.3;font-weight:normal;margin:0 0 15px}
     .note{font-size:15px;color:var(--muted);margin:0 0 18px}.entry{border-top:1px solid var(--line);padding:15px 0}.entry p{margin:0 0 5px}
     .entry .year{font-size:15px;color:var(--muted)}
-     .publication-title{font-weight:bold}.publication-meta{font-size:15px;color:var(--muted)}
+  .publication-title {
+  font-weight: normal;
+}
+
+.publication-title a {
+  color: var(--crimson);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.publication-title a:hover,
+.publication-title a:focus-visible {
+  color: #590000;
+  text-decoration: none;
+}
+
+.publication-meta {
+  font-size: 15px;
+  color: var(--muted);
+}
     footer{margin-top:65px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
     @media(max-width:700px){.band{padding:16px 23px;min-height:75px}.band-text strong{font-size:20px}.band-text span{font-size:15px}.container{padding:27px 22px 45px}h1{font-size:30px}.content-grid{display:block;padding-top:17px}nav{flex-direction:row;flex-wrap:wrap;gap:4px;margin-bottom:29px}nav button{width:auto;padding:8px 10px;font-size:15px}h2{font-size:25px}}
     @media(prefers-reduced-motion:no-preference){a,nav button{transition:background-color .12s,color .12s}}
   </style>
 </head>
 <body>
-  <div class="top-gap" aria-hidden="true"></div>
-  <div class="band"><div class="band-text"><strong>Indiana University</strong><span>Department of Mathematics</span></div></div>
+<div class="top-gap" aria-hidden="true"></div>
+  <div class="band" aria-hidden="true"
+       style="min-height:12px; padding:0;"></div>
   <div class="container">
-    <header>
-      <h1>Matthias Strauch</h1>
-      <address class="contact">
-        Department of Mathematics<br>
-        Indiana University Bloomington<br>
-        Rawles Hall 336, 831 East Third Street<br>
-        Bloomington, IN 47405<br>
-        <a href="mailto:mstrauch@indiana.edu">mstrauch@indiana.edu</a>
-      </address>
+    <header style="display:flex; justify-content:space-between;
+                   align-items:flex-start; gap:24px; flex-wrap:wrap;">
+      <div>
+        <h1 style="font-size:30px; margin:0 0 12px;">
+          Matthias Strauch
+        </h1>
+        <address class="contact">
+          Rawles Hall 336, 831 East Third Street<br>
+          Bloomington, IN 47405<br>
+          <a href="mailto:mstrauch@indiana.edu">mstrauch@indiana.edu</a>
+        </address>
+      </div>
+
+      <div class="band-text"
+           style="text-align:right; color:var(--crimson);">
+        <strong style="font-size:30px;">Indiana University</strong>
+        <span style="font-size:20px;">Department of Mathematics</span>
+      </div>
     </header>
+</header>
     <div class="content-grid">
       <nav aria-label="Website sections" role="tablist">
         <button id="tab-publications" role="tab" aria-controls="panel-publications" aria-selected="true" tabindex="0" data-panel="publications">Publications</button>
         <button id="tab-teaching" role="tab" aria-controls="panel-teaching" aria-selected="false" tabindex="-1" data-panel="teaching">Teaching</button>
+        <button id="tab-organizing" role="tab" aria-controls="panel-service" aria-selected="false" tabindex="-1" data-panel="service">Organizing</button>
         <button id="tab-service" role="tab" aria-controls="panel-service" aria-selected="false" tabindex="-1" data-panel="service">Service</button>
         <button id="tab-students" role="tab" aria-controls="panel-students" aria-selected="false" tabindex="-1" data-panel="students">Former students</button>
       </nav>
       <main>
         <section class="panel" id="panel-publications" role="tabpanel" aria-labelledby="tab-publications">
           <h2>Publications</h2>
-          <p class="note">Publications are imported from <a href="https://orcid.org/0000-0002-5291-5531" target="_blank" rel="noopener noreferrer">my ORCID record</a> and refreshed on the first day of each month.</p>
+          <p class="note">Publications are imported from my <a href="https://orcid.org/0000-0002-5291-5531" target="_blank" rel="noopener noreferrer">ORCID</a> record and refreshed on the first day of each month.</p>
           <p id="publication-status" class="note" aria-live="polite">Loading publications from ORCID…</p>
           <div id="publication-list" aria-live="polite"></div>         
         </section>
@@ -72,8 +103,20 @@
     </div>
     <footer>Preliminary private preview — not yet published on GitHub Pages.</footer>
   </div>
-  <script>
-    async function loadPublications() {
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      processEscapes: true
+    }
+  };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+
+<script>
+async function loadPublications() {
       const status = document.getElementById('publication-status');
       const list = document.getElementById('publication-list');
       try {
@@ -86,7 +129,7 @@
         for (const work of data.works) {
           const entry = document.createElement('div'); entry.className = 'entry';
           const title = document.createElement('p'); title.className = 'publication-title';
-          if (work.url && /^https:\/\//i.test(work.url)) {
+          if (work.url && work.url.startsWith('https://')) {
             const link = document.createElement('a'); link.href = work.url;
             link.target = '_blank'; link.rel = 'noopener noreferrer';
             link.textContent = work.title; title.append(link);
@@ -99,7 +142,9 @@
           }
           list.append(entry);
         }
-      } catch (error) {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+         await window.MathJax.typesetPromise([list]);
+       }     } catch (error) {
         status.textContent = 'Publications have not been imported yet. Please run the ORCID update workflow.';
         console.warn('Could not load publications:', error);
       }
