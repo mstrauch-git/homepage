@@ -129,6 +129,35 @@ details[open] {
 .seminar-program td:last-child {
   color: var(--ink);
 }
+/* Small workshop photographs, side by side */
+
+.workshop-photos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.workshop-photos a {
+  display: block;
+  flex: 0 1 240px;
+  min-width: 0;
+}
+
+.workshop-photos img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .workshop-photos {
+    flex-wrap: wrap;
+  }
+}
   </style>
 </head>
 <body>
