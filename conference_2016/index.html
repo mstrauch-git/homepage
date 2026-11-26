@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <meta name="Author" content="Keenan J. Kidwell and Matthias Strauch">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Adobe Dreamweaver CS4 Version 10.0">
+    <title>The p-adic Langlands Program and Related Topics</title>
+    <style type="text/css">
+<!-- 
+/* This is the background image */ -->
+#background {
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(Woodburn_Hall_5_wordpress.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	background-attachment: fixed;
+/*	background-color: rgba(0,0,0, 0.2) ; */
+	opacity:0.5;
+	position: fixed; 
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+	}
+#content {
+    position:relative;
+}
+<!-- /*	
+	background: rgb(255,255,255) transparent ;
+	background: rgba(255, 255, 255, 0.2) ;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF) ;
+	-ms-filter: �progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)� ; */ -->
+</style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="content">
+      <h1 align="center"> <font style="font-size: 20pt;"
+          color="#800000">The <i>p</i>-adic Langlands Program and Related Topics</font><br>
+        <font size="5">May 16-20,
+          2016</font><span
+          style="font-size: 18pt;"></span></h1>
+      <h1 align="center"><span style="font-size: 18pt;">
+			Indiana University Bloomington
+			&nbsp;</span><font size="5">
+          <meta charset="utf-8">
+          &nbsp; </font><br>
+      </h1>
+      <p align="left">
+        <meta charset="utf-8">
+      </p>
+					
+			<p style="margin-right: 0in; margin-left: 0in; font-size: medium;
+        font-family: 'Times New Roman', serif; color: rgb(0, 0, 0);
+        font-style: normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: normal; orphans: auto;
+        text-align: start; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 1; word-spacing: 0px;
+        -webkit-text-stroke-width: 0px;"><span style="font-size:
+          13.5pt;">The organizers gratefully acknowledge the financial support of the<span
+            class="Apple-converted-space">&nbsp;</span><a
+            href="http://www.nsf.gov/" style="color: purple;
+            text-decoration: underline;" target="http://www.nsf.gov/">National Science Foundation</a>, the<span
+            class="Apple-converted-space">&nbsp;</span><a
+            href="http://ias.indiana.edu//" style="color: purple;
+            text-decoration: underline;" target="http://ias.indiana.edu//">Institute for Advanced Study at Indiana University</a>, and the Department of Mathematics of Indiana University through funds from the<span
+            class="Apple-converted-space">&nbsp;</span><a
+            href="http://www.ima.umn.edu/" style="color: purple;
+            text-decoration: underline;" target="http://www.ima.umn.edu/">Institute for Mathematics and its Applications</a>. 
+          </span><o:p></o:p></p>
+			
+      <p style="margin-right: 0in; margin-left: 0in; font-size: medium;
+        font-family: 'Times New Roman', serif; color: rgb(0, 0, 0);
+        font-style: normal; font-variant: normal; font-weight: normal;
+        letter-spacing: normal; line-height: normal; orphans: auto;
+        text-align: start; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 1; word-spacing: 0px;
+        -webkit-text-stroke-width: 0px;"><span style="font-size:
+          13.5pt;">The purpose of the conference is to bring together experts working in the <i>p</i>-adic Langlands Program and related areas, and to provide an overview of current research pursued in fields like: representations of <i>p</i>-adic reductive groups in characteristic <i>p</i>, <i>p</i>-adic Banach space representations and locally analytic representations, <i>p</i>-adic Galois representations and their deformation spaces, <i>p</i>-adic Hodge Theory, (&phi;,&Gamma;)-modules, eigenvarieties, and <i>p</i>-adic automorphic forms.
+          </span><o:p></o:p></p>
+     <! <br class="Apple-interchange-newline">
+      <!-- <p align="center"> -->
+      <!-- <a href="BGW12schedule.pdf">Schedule</a>&nbsp;&nbsp;~&nbsp;&nbsp;<a  -->
+      <!-- href="BGW12abstracts.pdf">Abstracts</a></p> -->
+      <p><b><font style="font-size: 16pt;" color="#800000"> Speakers:</font></b>
+			(see <a href="videos/" target="videos/">here</a> for videos of the talks)
+			</p>
+      <p>
+        <meta charset="utf-8">
+      </p>
+
+      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Noriyuki Abe</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Hokkaido University)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Rebecca Bellovin</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Imperial College)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">John Bergdall</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Boston University)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Laurent Berger</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(ENS de Lyon)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Bryden Cais</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(University of Arizona)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Ana Caraiani</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Princeton University)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Yiwen Ding</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Imperial College)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Gabriel Dospinescu</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(ENS de Lyon, CNRS)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Elmar Grosse-Kl&ouml;nne</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Humboldt University Berlin)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">David Hansen</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Columbia University)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Eugen Hellmann</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Bonn)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Florian Herzig</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(University of Toronto)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Kiran Kedlaya</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(University of California at San Diego) 
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Erick Knight</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Harvard University)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Daniel Le</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(University of Toronto)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Tong Liu</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Purdue University) 
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Judith Ludwig</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Bonn)
+					 </span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">James Newton</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Imperial College)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">David Savitt</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(Johns Hopkins University)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Peter Schneider</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(M&uuml;nster)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Claus Sorensen</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(University of California at San Diego)
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+			      <p></p>
+			      <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+        medium; font-family: 'Times New Roman', serif; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans:
+        auto; text-align: start; text-transform: none; white-space:
+        normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width:
+        0px; text-indent: -0.25in;"><b><span style="font-size: 10pt;
+            font-family: Symbol;"><span style="font-style:
+                normal; font-variant: normal; font-weight: normal;
+                font-stretch: normal; font-size: 7pt; line-height:
+                normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="Apple-converted-space">&nbsp;</span></span></span></span>
+          <strong> <span style="font-size: 13.5pt;">Liang Xiao</span></strong>
+          <span style="font-size: 13.5pt;"><span
+              class="Apple-converted-space">&nbsp;</span></span></b><span
+          style="font-size: 13.5pt;"><span class="Apple-converted-space"></span>(University of Connecticut)  <p></p>
+		
+					</span><b><span style="font-size: 13.5pt;"><o:p></o:p></span></b></p>
+      <b>
+        
+      <p></p>
+      <p><font size="4">Conference <a href="p_adic_Langlands_schedule.pdf" target="p_adic_Langlands_schedule.pdf">schedule</a>.</font></p>
+      <p><font size="4">Titles and <a href="p_adic_Langlands_titles_abstracts.pdf" target="p_adic_Langlands_titles_abstracts.pdf">abstracts</a>.
+			</font></p>
+						
+					      <p><font size="4">Conference 
+			<a href="p_adic_Langlands_conference_poster.pdf" target="p_adic_Langlands_conference_poster.pdf">poster</a> and conference <a href="photo" target="conference_2016/photo">photo</a>. </font></p>
+<p></p>
+
+<P>      <b><font style="font-size: 16pt;" color="#800000">Poster session:</font><span
+          style="font-size: 16pt;"> </span></b>
+            <p>
+        <meta charset="utf-8">
+        <span style="color: rgb(0, 0, 0); font-family: 'Times New
+          Roman', serif; font-size: 18px; font-style: normal;
+          font-variant: normal; font-weight: normal; letter-spacing:
+          normal; line-height: normal; orphans: auto; text-align: start;
+          text-indent: 0px; text-transform: none; white-space: normal;
+          widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+          display: inline !important; float: none;">There will be a poster session on Wednesday, May 18, in the afternoon, and posters will be on display during the time of the conference in a seminar room near the main lecture hall.</span></p>	
+			
+<p></p>
+
+ <p> <b> <font style="font-size: 16pt;" color="#800000">Location and Directions: </font><br>
+          </b> </p>
+        <p><font size="4">The conference venue is room 122 in the Department of Chemistry.</font>
+        </p>
+        <ul>
+          <li>
+            <p align="left"><font size="4">The red pin on this <a
+href="https://www.google.com/maps/place/Chemistry+Library/@39.1659962,-86.5227653,15z/data=!4m2!3m1!1s0x0:0x67ecef458abf2e64" target="https://www.google.com/maps/place/Chemistry+Library/@39.1659962,-86.5227653,15z/data=!4m2!3m1!1s0x0:0x67ecef458abf2e64">map</a>
+                indicates the location of the Department of Chemistry.<br>
+              </font></p>
+          </li>
+          <li>
+            <p align="left"> <font size="4">Here is a map of the campus. 
+									</font></p>
+          </li>
+        </ul>
+
+      <b><font style="font-size: 16pt;" color="#800000">Accommodation and Travel Support:</font><span
+          style="font-size: 16pt;"> </span></b>
+            <p>
+        <meta charset="utf-8">
+        <span style="color: rgb(0, 0, 0); font-family: 'Times New
+          Roman', serif; font-size: 18px; font-style: normal;
+          font-variant: normal; font-weight: normal; letter-spacing:
+          normal; line-height: normal; orphans: auto; text-align: start;
+          text-indent: 0px; text-transform: none; white-space: normal;
+          widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+          display: inline !important; float: none;">Thanks to the financial support of the NSF and the Institute for Advanced Study at IU, we plan to reimburse the travel or lodging expenses of as many participants as our funding allows. The support of graduate students and recent PhDs will receive priority. If you are interested in participating in the conference, please e-mail one of the organizers (scroll down to see organizer e-mail addresses) with your institutional affiliation, your advisor's name if you are a graduate student, and whether you wish to request support for travel or lodging.</span></p>
+      <p><font style="font-size: 16pt;" color="#800000"> <b>Dining and Coffee</b></font><b><font style="font-size:
+            16pt;" color="#800000">:</font></b></p>
+      <ul>
+        <meta charset="utf-8">
+         <li class="MsoNormal" style="margin: 0in 0in 0.0001pt;
+          font-size: 12pt; font-family: 'Times New Roman', serif;"><b><span
+              style="font-size: 13.5pt;">Breaks:<span
+                class="Apple-converted-space">&nbsp;</span></span></b><span
+            style="font-size: 13.5pt;"> There will be a number of breaks in between talks during each day of the conference during which beverages including coffee and tea will be provided. More substantial refreshments including cookies and pastries will be provided during the longer breaks.
+      </ul><!insert break schedule?>
+    <ul>
+        <meta charset="utf-8">
+        <li class="MsoNormal" style="margin: 0in 0in 0.0001pt;
+          font-size: 12pt; font-family: 'Times New Roman', serif;"><b><span
+              style="font-size: 13.5pt;">Restaurants and Coffee:<span
+                class="Apple-converted-space">&nbsp;</span></span></b><span
+            style="font-size: 13.5pt;">There are many restaurants near the
+            university offering a wide variety of cuisine including
+            Afghan, Burmese, Eritrean, Indian, Moroccan, Thai, and
+            Tibetan. Most have fare amenable to vegetarian diets, and
+            one can find a decent cup of coffee in town.</span></li>
+      </ul>
+            <ul>
+        <meta charset="utf-8">
+         <li class="MsoNormal" style="margin: 0in 0in 0.0001pt;
+          font-size: 12pt; font-family: 'Times New Roman', serif;"><b><span
+              style="font-size: 13.5pt;">Conference dinner:<span
+                class="Apple-converted-space">&nbsp;</span></span></b><span
+            style="font-size: 13.5pt;"> There will be a conference dinner buffet on Wednesday, May 18, at Samira's restaurant. The costs of &#36;18 per person are to be paid in cash at registration or afterwards to the organizers.  
+      </ul>
+      <font size="4">
+        <p>
+				<b><font style="font-size: 16pt;" color="#800000">Accommodations:</font><span style="font-size: 16pt;"> </span></b>
+          <p>
+          <meta charset="utf-8">
+          <span style="color: rgb(0, 0, 0); font-family: 'Times New
+            Roman', serif; font-size: 18px; font-style: normal;
+            font-variant: normal; font-weight: normal; letter-spacing:
+            normal; line-height: normal; orphans: auto; text-align:
+            start; text-indent: 0px; text-transform: none; white-space:
+            normal; widows: 1; word-spacing: 0px;
+            -webkit-text-stroke-width: 0px; display: inline !important;
+            float: none;">Conference participants with lodging support will have accommodations booked by the organizers at the <span
+            style="font-size: 13.5pt;"><a
+              href="http://imu.indiana.edu/hotel/index.shtml"
+              target="http://imu.indiana.edu/hotel/index.shtml"
+							style="color: purple; text-decoration: underline;">Biddle Hotel and Conference Center</a> in the Indiana Memorial Union or at the <span
+            style="font-size: 13.5pt;"><a
+              href="http://www.marriott.com/hotels/travel/bmgcy-courtyard-bloomington/"
+              target="http://www.marriott.com/hotels/travel/bmgcy-courtyard-bloomington/" style="color: purple; text-decoration: underline;">Courtyard Marriott</a>. For participants without lodging support, we recommend you book your hotel as soon as possible to ensure vacancies. In addition to the Biddle Hotel, there are a number of other hotels near the lecture hall where the talks will be held:</span> </p>
+     
+      </font><font size="4">
+        <meta charset="utf-8">
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;"><span
+            style="font-size: 13.5pt;"><a
+              href="http://marriott.com/property/propertypage/BMGCY"
+              style="color: purple; text-decoration: underline;">Courtyard
+
+              by Marriott</a>, 15 minute walk from workshop.<span>&nbsp;<span
+                class="Apple-converted-space">&nbsp;</span></span>812-335-8000.</span></p>
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;"><span
+            style="font-size: 13.5pt;"><a
+href="http://hiltongardeninn.hilton.com/en/gi/hotels/photo_gallery.jhtml?ctyhocn=BMGINGI&amp;category=0"
+              style="color: purple; text-decoration: underline;">Hilton
+              Garden Inn</a>, 15 minute walk from workshop.
+            812-331-1335.</span></p>
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;"><span
+            style="font-size: 13.5pt;"><a
+href="http://www.travelodge.com/Travelodge/control/Booking/property_info/?propertyId=09401&amp;brandInfo=TL"
+              style="color: purple; text-decoration: underline;">Travelodge</a>, 20 minute walk to workshop. 812-339-6191.</span></p>
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;"><span
+            style="font-size: 10pt; font-family: Symbol;"><span><span
+                style="font-style: normal; font-variant: normal;
+                font-weight: normal; font-stretch: normal; font-size:
+                7pt; line-height: normal; font-family: 'Times New
+                Roman';"><span class="Apple-converted-space"></span></span></span></span><span
+            style="font-size: 13.5pt;"><a
+href="http://www.hamptoninn.com/en/hp/hotels/index.jhtml?ctyhocn=BMGWLHX"
+              style="color: purple; text-decoration: underline;">Hampton
+              Inn</a>, 2 miles from workshop. 812-334-2100.</span></p>
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;"><a
+href="http://www.holidayinn.com/hotels/us/en/bloomington/bmgkp/hoteldetail"
+            style="color: purple; text-decoration: underline;"><span
+              style="font-size: 13.5pt;">Holiday Inn</span></a><span
+            style="font-size: 13.5pt;">, 2.2 miles from workshop.
+            812-334-3252.</span></p>
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;"><a
+href="http://www.comfortinn.com/ires/en-US/html/HotelInfo?hotel=IN275&amp;promo=gglocal"
+            style="color: purple; text-decoration: underline;"><span
+              style="font-size: 13.5pt;">Comfort Inn</span></a><span
+            style="font-size: 13.5pt;">, 2.2 miles from<span
+              class="Apple-converted-space">&nbsp;</span><span
+              class="SpellE">workhop</span>. 812-650-0010.</span></p>
+        <p style="margin-right: 0in; margin-left: 0.5in; font-size:
+          medium; font-family: 'Times New Roman', serif; color: rgb(0,
+          0, 0); font-style: normal; font-variant: normal; font-weight:
+          normal; letter-spacing: normal; line-height: normal; orphans:
+          auto; text-align: start; text-transform: none; white-space:
+          normal; widows: 1; word-spacing: 0px;
+          -webkit-text-stroke-width: 0px; text-indent: -0.25in;">SummerHouse Inn, 2.6 miles from workshop.
+            812-332-2141.</span></p>
+        <!<br class="Apple-interchange-newline">
+          
+ <p> <b> <font style="font-size: 16pt;" color="#800000">Travel to Bloomington: 
+	       </font><br>
+         </b> </p>
+				
+				 <p><b> </b></p>
+        <ul>
+          <b> <font size="4">
+              <li><b>
+                  Detailed information on travel by plane and car.</b></li>
+										
+										</font></b></ul>
+          
+          
+
+        <p><b><font style="font-size: 16pt;" color="#800000">Organizers:
+            </font><br>
+          </b></p>
+        <p><b> </b></p>
+        <ul>
+          <b> <font size="4">
+              <li><b>Keenan Kidwell </b></li>
+              <li><b>Matthias Strauch </b></li>
+                         </font></b>
+        </ul>
+				
+				        <p><b><font style="font-size: 16pt;" color="#800000">Confirmed participants:
+            </font><br>
+          </b></p>
+        <p><b> </b></p>
+        <ul> 
+          <b> <font size="4">
+<li><b>Patrick Allen (University of Illinois at Urbana-Champaign)</b></li>
+<li><b>Eran Assaf (Hebrew University Jerusalem)</b></li>	
+<li><b>Dubravka Ban (Southern Illinois University)</b></li>	
+<li><b>Daniel Barrera Salazar (CRM Montreal)</b></li>	
+<li><b>Shalini Bhattacharya (Bar-Ilan University)</b></li>
+<li><b>Marten Bornmann (Universit&auml;t M&uuml;nster)</b></li>
+<li><b>Annie Carter (UC San Diego)</b></li>
+<li><b>Przemys&#322;aw Chojecki (University of Oxford)</b></li> 
+<li><b>Hansheng Diao (Princeton University)</b></li>
+<li><b>Giovanni Di Matteo (Johns Hopkins)</b></li>  
+<li><b>Gal Dor (Tel Aviv University)</b></li>		
+<li><b>Heng Du (Purdue University)</b></li>
+<li><b>Carl Wang Erickson (Brandeis)</b></li>
+<li><b>Tianqi Fan (University of Chicago)</b></li>
+<li><b>Konrad Fischer (Universit&auml;t Heidelberg)</b></li>
+<li><b>Ildar Gaisin (Paris-Jussieu)</b></li>
+<li><b>Hui Gao (Beijing Intl. Center for Math. Research)</b></li>
+<li><b>David-Alexandre Guiraud (Heidelberg)</b></li>
+<li><b>Vishal Gupta (Universit&auml;t Leipzig)</b></li>
+<li><b>Mohammad Hadi Hedayatzadeh (Purdue University)</b></li>
+<li><b>Sean Howe (University of Chicago)</b></li>
+<li><b>Brian Hwang (Caltech)</b></li>
+<li><b>WonTae Hwang (Indiana University)</b></li>
+<li><b>Naoki Imai (University of Tokyo, MIT)</b></li>
+<li><b>Zonglin Jiang (UC San Diego)</b></li>
+<li><b>Christian Johansson (Princeton University)</b></li>
+<li><b>Justin Katz (Purdue University)</b></li>
+<li><b>Chan-Ho Kim (Korea Institute for Advanced Study)</b></li>
+<li><b>Joe Kramer-Miller (CUNY)</b></li>
+<li><b>Mark Kuschkowitz (Universit&auml;t Wuppertal)</b></li> 
+<li><b>Aranya Lahiri (Indiana University)</b></li>
+<li><b>Jaclyn Lang (UCLA)</b></li>
+<li><b>Brandon Levin (University of Chicago)</b></li>
+<li><b>Chi Yu Lo (Beijing Intl. Center for Math. Research)</b></li>
+<li><b>Anna Medvedovsky (ICERM - Brown University)</b></li>
+<li><b>Mar&iacute;a Luisa Mendoza (CINVESTAV - Mexico)</b></li>
+<li><b>Yong Suk Moon (Harvard University)</b></li>
+<li><b>Pedro Morales (University of Texas at Austin)</b></li>
+<li><b>Stefano Morra (Universit&eacute; de Montpellier)</b></li>
+<li><b>Lue Pan (Princeton University)</b></li>
+<li><b>Chol Park (Korea Institute for Advanced Study)</b></li>
+<li><b>James Phillips (University of Virginia)</b></li>
+<li><b>Robert Pollack (Boston University)</b></li>
+<li><b>Zicheng Qian (ENS Paris)</b></li>
+<li><b>Mohammad Reza Rahmati (Beijing Intl. Center for Math. Research)</b></li>
+<li><b>Rufei Ren (UC Irvine)</b></li>
+<li><b>David Roe (University of Pittsburgh)</b></li>
+<li><b>Sandra Rozensztajn (ENS de Lyon)</b></li>
+<li><b>Niccol&oacute; Ronchetti (Stanford University)</b></li>
+<li><b>Michael Schein (Bar-Ilan University)</b></li>
+<li><b>Matthew Schmidt (SUNY Buffalo)</b></li>
+<li><b>Shrenik Shah (Columbia University)</b></li>
+<li><b>Koji Shimizu (Harvard University)</b></li>
+<li><b>Nicholas Stanford (Indiana University)</b></li>
+<li><b>Anna Szumowicz (Durham)</b></li>
+<li><b>Razan Taha (Purdue University)</b></li>
+<li><b>Tien D Trinh (Rutgers University)</b></li>
+<li><b>Shen-Ning Tung (Universit&auml;t Duisburg-Essen)</b></li>
+<li><b>An Hoa (Lawrence) Vu (CUNY)</b></li>
+<li><b>Xiyuan Wang (Johns Hopkins University)</b></li>  
+<li><b>Eric Wawerczyk (University of Notre Dame)</b></li> 
+<li><b>Myungjun Yu (UC Irvine)</b></li>
+<li><b>Peng Yu (University of Wisconsin)</b></li>  
+<li><b>Bin Zhao (University of Connecticut)</b></li>  
+<li><b>Hui June Zhu (SUNY Buffalo)</b></li>
+							
+                         </font></b>
+        </ul>
+				
+        <b> </b></font></div>
+    <font size="4"><b> </b></font>
+		
+		
+  </body>
+</html>
